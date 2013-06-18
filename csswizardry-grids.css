@@ -12,11 +12,14 @@
  * Set the spacing between your grid items.
  */
 /**
+ * Would you like push and pull classes enabled?
+ */
+/**
  * Define your breakpoints. The first value is the prefix that shall be used for
  * your classes (e.g. `.palm--one-half`), the second value is the media query
  * that the breakpoint fires at.
  */
-/*------------------------------------* 	$MIXINS
+/*------------------------------------*   $MIXINS
 \*------------------------------------*/
 /**
  * Mixin to create the different sizes dynamically
@@ -156,14 +159,38 @@
 .one-half {
   width: 50%;
 }
+.push-one-half {
+  left: 50%;
+  position: relative;
+}
+.pull-one-half {
+  right: 50%;
+  position: relative;
+}
 /**
 	 * Thirds
 	 */
 .one-third {
   width: 33.33333333333333%;
 }
+.push-one-third {
+  left: 33.33333333333333%;
+  position: relative;
+}
+.pull-one-third {
+  right: 33.33333333333333%;
+  position: relative;
+}
 .two-thirds {
   width: 66.66666666666666%;
+}
+.push-two-thirds {
+  left: 66.66666666666666%;
+  position: relative;
+}
+.pull-two-thirds {
+  right: 66.66666666666666%;
+  position: relative;
 }
 /**
 	 * Quarters
@@ -171,11 +198,35 @@
 .one-quarter {
   width: 25%;
 }
+.push-one-quarter {
+  left: 25%;
+  position: relative;
+}
+.pull-one-quarter {
+  right: 25%;
+  position: relative;
+}
 .two-quarters {
   width: 50%;
 }
+.push-two-quarters {
+  left: 50%;
+  position: relative;
+}
+.pull-two-quarters {
+  right: 50%;
+  position: relative;
+}
 .three-quarters {
   width: 75%;
+}
+.push-three-quarters {
+  left: 75%;
+  position: relative;
+}
+.pull-three-quarters {
+  right: 75%;
+  position: relative;
 }
 /**
 	 * Fifths
@@ -183,14 +234,46 @@
 .one-fifth {
   width: 20%;
 }
+.push-one-fifth {
+  left: 20%;
+  position: relative;
+}
+.pull-one-fifth {
+  right: 20%;
+  position: relative;
+}
 .two-fifths {
   width: 40%;
+}
+.push-two-fifths {
+  left: 40%;
+  position: relative;
+}
+.pull-two-fifths {
+  right: 40%;
+  position: relative;
 }
 .three-fifths {
   width: 60%;
 }
+.push-three-fifths {
+  left: 60%;
+  position: relative;
+}
+.pull-three-fifths {
+  right: 60%;
+  position: relative;
+}
 .four-fifths {
   width: 80%;
+}
+.push-four-fifths {
+  left: 80%;
+  position: relative;
+}
+.pull-four-fifths {
+  right: 80%;
+  position: relative;
 }
 /**
 	 * Sixths
@@ -198,17 +281,57 @@
 .one-sixth {
   width: 16.666666666666664%;
 }
+.push-one-sixth {
+  left: 16.666666666666664%;
+  position: relative;
+}
+.pull-one-sixth {
+  right: 16.666666666666664%;
+  position: relative;
+}
 .two-sixths {
   width: 33.33333333333333%;
+}
+.push-two-sixths {
+  left: 33.33333333333333%;
+  position: relative;
+}
+.pull-two-sixths {
+  right: 33.33333333333333%;
+  position: relative;
 }
 .three-sixths {
   width: 50%;
 }
+.push-three-sixths {
+  left: 50%;
+  position: relative;
+}
+.pull-three-sixths {
+  right: 50%;
+  position: relative;
+}
 .four-sixths {
   width: 66.66666666666666%;
 }
+.push-four-sixths {
+  left: 66.66666666666666%;
+  position: relative;
+}
+.pull-four-sixths {
+  right: 66.66666666666666%;
+  position: relative;
+}
 .five-sixths {
   width: 83.33333333333334%;
+}
+.push-five-sixths {
+  left: 83.33333333333334%;
+  position: relative;
+}
+.pull-five-sixths {
+  right: 83.33333333333334%;
+  position: relative;
 }
 /**
 	 * Eighths
@@ -216,23 +339,79 @@
 .one-eighth {
   width: 12.5%;
 }
+.push-one-eighth {
+  left: 12.5%;
+  position: relative;
+}
+.pull-one-eighth {
+  right: 12.5%;
+  position: relative;
+}
 .two-eighths {
   width: 25%;
+}
+.push-two-eighths {
+  left: 25%;
+  position: relative;
+}
+.pull-two-eighths {
+  right: 25%;
+  position: relative;
 }
 .three-eighths {
   width: 37.5%;
 }
+.push-three-eighths {
+  left: 37.5%;
+  position: relative;
+}
+.pull-three-eighths {
+  right: 37.5%;
+  position: relative;
+}
 .four-eighths {
   width: 50%;
+}
+.push-four-eighths {
+  left: 50%;
+  position: relative;
+}
+.pull-four-eighths {
+  right: 50%;
+  position: relative;
 }
 .five-eighths {
   width: 62.5%;
 }
+.push-five-eighths {
+  left: 62.5%;
+  position: relative;
+}
+.pull-five-eighths {
+  right: 62.5%;
+  position: relative;
+}
 .six-eighths {
   width: 75%;
 }
+.push-six-eighths {
+  left: 75%;
+  position: relative;
+}
+.pull-six-eighths {
+  right: 75%;
+  position: relative;
+}
 .seven-eighths {
   width: 87.5%;
+}
+.push-seven-eighths {
+  left: 87.5%;
+  position: relative;
+}
+.pull-seven-eighths {
+  right: 87.5%;
+  position: relative;
 }
 /**
 	 * Tenths
@@ -240,29 +419,101 @@
 .one-tenth {
   width: 10%;
 }
+.push-one-tenth {
+  left: 10%;
+  position: relative;
+}
+.pull-one-tenth {
+  right: 10%;
+  position: relative;
+}
 .two-tenths {
   width: 20%;
+}
+.push-two-tenths {
+  left: 20%;
+  position: relative;
+}
+.pull-two-tenths {
+  right: 20%;
+  position: relative;
 }
 .three-tenths {
   width: 30%;
 }
+.push-three-tenths {
+  left: 30%;
+  position: relative;
+}
+.pull-three-tenths {
+  right: 30%;
+  position: relative;
+}
 .four-tenths {
   width: 40%;
+}
+.push-four-tenths {
+  left: 40%;
+  position: relative;
+}
+.pull-four-tenths {
+  right: 40%;
+  position: relative;
 }
 .five-tenths {
   width: 50%;
 }
+.push-five-tenths {
+  left: 50%;
+  position: relative;
+}
+.pull-five-tenths {
+  right: 50%;
+  position: relative;
+}
 .six-tenths {
   width: 60%;
+}
+.push-six-tenths {
+  left: 60%;
+  position: relative;
+}
+.pull-six-tenths {
+  right: 60%;
+  position: relative;
 }
 .seven-tenths {
   width: 70%;
 }
+.push-seven-tenths {
+  left: 70%;
+  position: relative;
+}
+.pull-seven-tenths {
+  right: 70%;
+  position: relative;
+}
 .eight-tenths {
   width: 80%;
 }
+.push-eight-tenths {
+  left: 80%;
+  position: relative;
+}
+.pull-eight-tenths {
+  right: 80%;
+  position: relative;
+}
 .nine-tenths {
   width: 90%;
+}
+.push-nine-tenths {
+  left: 90%;
+  position: relative;
+}
+.pull-nine-tenths {
+  right: 90%;
+  position: relative;
 }
 /**
 	 * Twelfths
@@ -270,35 +521,123 @@
 .one-twelfth {
   width: 8.333333333333332%;
 }
+.push-one-twelfth {
+  left: 8.333333333333332%;
+  position: relative;
+}
+.pull-one-twelfth {
+  right: 8.333333333333332%;
+  position: relative;
+}
 .two-twelfths {
   width: 16.666666666666664%;
+}
+.push-two-twelfths {
+  left: 16.666666666666664%;
+  position: relative;
+}
+.pull-two-twelfths {
+  right: 16.666666666666664%;
+  position: relative;
 }
 .three-twelfths {
   width: 25%;
 }
+.push-three-twelfths {
+  left: 25%;
+  position: relative;
+}
+.pull-three-twelfths {
+  right: 25%;
+  position: relative;
+}
 .four-twelfths {
   width: 33.33333333333333%;
+}
+.push-four-twelfths {
+  left: 33.33333333333333%;
+  position: relative;
+}
+.pull-four-twelfths {
+  right: 33.33333333333333%;
+  position: relative;
 }
 .five-twelfths {
   width: 41.66666666666667%;
 }
+.push-five-twelfths {
+  left: 41.66666666666667%;
+  position: relative;
+}
+.pull-five-twelfths {
+  right: 41.66666666666667%;
+  position: relative;
+}
 .six-twelfths {
   width: 50%;
+}
+.push-six-twelfths {
+  left: 50%;
+  position: relative;
+}
+.pull-six-twelfths {
+  right: 50%;
+  position: relative;
 }
 .seven-twelfths {
   width: 58.333333333333336%;
 }
+.push-seven-twelfths {
+  left: 58.333333333333336%;
+  position: relative;
+}
+.pull-seven-twelfths {
+  right: 58.333333333333336%;
+  position: relative;
+}
 .eight-twelfths {
   width: 66.66666666666666%;
+}
+.push-eight-twelfths {
+  left: 66.66666666666666%;
+  position: relative;
+}
+.pull-eight-twelfths {
+  right: 66.66666666666666%;
+  position: relative;
 }
 .nine-twelfths {
   width: 75%;
 }
+.push-nine-twelfths {
+  left: 75%;
+  position: relative;
+}
+.pull-nine-twelfths {
+  right: 75%;
+  position: relative;
+}
 .ten-twelfths {
   width: 83.33333333333334%;
 }
+.push-ten-twelfths {
+  left: 83.33333333333334%;
+  position: relative;
+}
+.pull-ten-twelfths {
+  right: 83.33333333333334%;
+  position: relative;
+}
 .eleven-twelfths {
   width: 91.66666666666666%;
+}
+.push-eleven-twelfths {
+  left: 91.66666666666666%;
+  position: relative;
+}
+.pull-eleven-twelfths {
+  right: 91.66666666666666%;
+  position: relative;
 }
 @media (max-width: 480px) {
   .palm-one-whole {
@@ -307,128 +646,464 @@
   .palm-one-half {
     width: 50%;
   }
+  .push-palm-one-half {
+    left: 50%;
+    position: relative;
+  }
+  .pull-palm-one-half {
+    right: 50%;
+    position: relative;
+  }
   .palm-one-third {
     width: 33.33333333333333%;
+  }
+  .push-palm-one-third {
+    left: 33.33333333333333%;
+    position: relative;
+  }
+  .pull-palm-one-third {
+    right: 33.33333333333333%;
+    position: relative;
   }
   .palm-two-thirds {
     width: 66.66666666666666%;
   }
+  .push-palm-two-thirds {
+    left: 66.66666666666666%;
+    position: relative;
+  }
+  .pull-palm-two-thirds {
+    right: 66.66666666666666%;
+    position: relative;
+  }
   .palm-one-quarter {
     width: 25%;
+  }
+  .push-palm-one-quarter {
+    left: 25%;
+    position: relative;
+  }
+  .pull-palm-one-quarter {
+    right: 25%;
+    position: relative;
   }
   .palm-two-quarters {
     width: 50%;
   }
+  .push-palm-two-quarters {
+    left: 50%;
+    position: relative;
+  }
+  .pull-palm-two-quarters {
+    right: 50%;
+    position: relative;
+  }
   .palm-three-quarters {
     width: 75%;
+  }
+  .push-palm-three-quarters {
+    left: 75%;
+    position: relative;
+  }
+  .pull-palm-three-quarters {
+    right: 75%;
+    position: relative;
   }
   .palm-one-fifth {
     width: 20%;
   }
+  .push-palm-one-fifth {
+    left: 20%;
+    position: relative;
+  }
+  .pull-palm-one-fifth {
+    right: 20%;
+    position: relative;
+  }
   .palm-two-fifths {
     width: 40%;
+  }
+  .push-palm-two-fifths {
+    left: 40%;
+    position: relative;
+  }
+  .pull-palm-two-fifths {
+    right: 40%;
+    position: relative;
   }
   .palm-three-fifths {
     width: 60%;
   }
+  .push-palm-three-fifths {
+    left: 60%;
+    position: relative;
+  }
+  .pull-palm-three-fifths {
+    right: 60%;
+    position: relative;
+  }
   .palm-four-fifths {
     width: 80%;
+  }
+  .push-palm-four-fifths {
+    left: 80%;
+    position: relative;
+  }
+  .pull-palm-four-fifths {
+    right: 80%;
+    position: relative;
   }
   .palm-one-sixth {
     width: 16.666666666666664%;
   }
+  .push-palm-one-sixth {
+    left: 16.666666666666664%;
+    position: relative;
+  }
+  .pull-palm-one-sixth {
+    right: 16.666666666666664%;
+    position: relative;
+  }
   .palm-two-sixths {
     width: 33.33333333333333%;
+  }
+  .push-palm-two-sixths {
+    left: 33.33333333333333%;
+    position: relative;
+  }
+  .pull-palm-two-sixths {
+    right: 33.33333333333333%;
+    position: relative;
   }
   .palm-three-sixths {
     width: 50%;
   }
+  .push-palm-three-sixths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-palm-three-sixths {
+    right: 50%;
+    position: relative;
+  }
   .palm-four-sixths {
     width: 66.66666666666666%;
+  }
+  .push-palm-four-sixths {
+    left: 66.66666666666666%;
+    position: relative;
+  }
+  .pull-palm-four-sixths {
+    right: 66.66666666666666%;
+    position: relative;
   }
   .palm-five-sixths {
     width: 83.33333333333334%;
   }
+  .push-palm-five-sixths {
+    left: 83.33333333333334%;
+    position: relative;
+  }
+  .pull-palm-five-sixths {
+    right: 83.33333333333334%;
+    position: relative;
+  }
   .palm-one-eighth {
     width: 12.5%;
+  }
+  .push-palm-one-eighth {
+    left: 12.5%;
+    position: relative;
+  }
+  .pull-palm-one-eighth {
+    right: 12.5%;
+    position: relative;
   }
   .palm-two-eighths {
     width: 25%;
   }
+  .push-palm-two-eighths {
+    left: 25%;
+    position: relative;
+  }
+  .pull-palm-two-eighths {
+    right: 25%;
+    position: relative;
+  }
   .palm-three-eighths {
     width: 37.5%;
+  }
+  .push-palm-three-eighths {
+    left: 37.5%;
+    position: relative;
+  }
+  .pull-palm-three-eighths {
+    right: 37.5%;
+    position: relative;
   }
   .palm-four-eighths {
     width: 50%;
   }
+  .push-palm-four-eighths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-palm-four-eighths {
+    right: 50%;
+    position: relative;
+  }
   .palm-five-eighths {
     width: 62.5%;
+  }
+  .push-palm-five-eighths {
+    left: 62.5%;
+    position: relative;
+  }
+  .pull-palm-five-eighths {
+    right: 62.5%;
+    position: relative;
   }
   .palm-six-eighths {
     width: 75%;
   }
+  .push-palm-six-eighths {
+    left: 75%;
+    position: relative;
+  }
+  .pull-palm-six-eighths {
+    right: 75%;
+    position: relative;
+  }
   .palm-seven-eighths {
     width: 87.5%;
+  }
+  .push-palm-seven-eighths {
+    left: 87.5%;
+    position: relative;
+  }
+  .pull-palm-seven-eighths {
+    right: 87.5%;
+    position: relative;
   }
   .palm-one-tenth {
     width: 10%;
   }
+  .push-palm-one-tenth {
+    left: 10%;
+    position: relative;
+  }
+  .pull-palm-one-tenth {
+    right: 10%;
+    position: relative;
+  }
   .palm-two-tenths {
     width: 20%;
+  }
+  .push-palm-two-tenths {
+    left: 20%;
+    position: relative;
+  }
+  .pull-palm-two-tenths {
+    right: 20%;
+    position: relative;
   }
   .palm-three-tenths {
     width: 30%;
   }
+  .push-palm-three-tenths {
+    left: 30%;
+    position: relative;
+  }
+  .pull-palm-three-tenths {
+    right: 30%;
+    position: relative;
+  }
   .palm-four-tenths {
     width: 40%;
+  }
+  .push-palm-four-tenths {
+    left: 40%;
+    position: relative;
+  }
+  .pull-palm-four-tenths {
+    right: 40%;
+    position: relative;
   }
   .palm-five-tenths {
     width: 50%;
   }
+  .push-palm-five-tenths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-palm-five-tenths {
+    right: 50%;
+    position: relative;
+  }
   .palm-six-tenths {
     width: 60%;
+  }
+  .push-palm-six-tenths {
+    left: 60%;
+    position: relative;
+  }
+  .pull-palm-six-tenths {
+    right: 60%;
+    position: relative;
   }
   .palm-seven-tenths {
     width: 70%;
   }
+  .push-palm-seven-tenths {
+    left: 70%;
+    position: relative;
+  }
+  .pull-palm-seven-tenths {
+    right: 70%;
+    position: relative;
+  }
   .palm-eight-tenths {
     width: 80%;
+  }
+  .push-palm-eight-tenths {
+    left: 80%;
+    position: relative;
+  }
+  .pull-palm-eight-tenths {
+    right: 80%;
+    position: relative;
   }
   .palm-nine-tenths {
     width: 90%;
   }
+  .push-palm-nine-tenths {
+    left: 90%;
+    position: relative;
+  }
+  .pull-palm-nine-tenths {
+    right: 90%;
+    position: relative;
+  }
   .palm-one-twelfth {
     width: 8.333333333333332%;
+  }
+  .push-palm-one-twelfth {
+    left: 8.333333333333332%;
+    position: relative;
+  }
+  .pull-palm-one-twelfth {
+    right: 8.333333333333332%;
+    position: relative;
   }
   .palm-two-twelfths {
     width: 16.666666666666664%;
   }
+  .push-palm-two-twelfths {
+    left: 16.666666666666664%;
+    position: relative;
+  }
+  .pull-palm-two-twelfths {
+    right: 16.666666666666664%;
+    position: relative;
+  }
   .palm-three-twelfths {
     width: 25%;
+  }
+  .push-palm-three-twelfths {
+    left: 25%;
+    position: relative;
+  }
+  .pull-palm-three-twelfths {
+    right: 25%;
+    position: relative;
   }
   .palm-four-twelfths {
     width: 33.33333333333333%;
   }
+  .push-palm-four-twelfths {
+    left: 33.33333333333333%;
+    position: relative;
+  }
+  .pull-palm-four-twelfths {
+    right: 33.33333333333333%;
+    position: relative;
+  }
   .palm-five-twelfths {
     width: 41.66666666666667%;
+  }
+  .push-palm-five-twelfths {
+    left: 41.66666666666667%;
+    position: relative;
+  }
+  .pull-palm-five-twelfths {
+    right: 41.66666666666667%;
+    position: relative;
   }
   .palm-six-twelfths {
     width: 50%;
   }
+  .push-palm-six-twelfths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-palm-six-twelfths {
+    right: 50%;
+    position: relative;
+  }
   .palm-seven-twelfths {
     width: 58.333333333333336%;
+  }
+  .push-palm-seven-twelfths {
+    left: 58.333333333333336%;
+    position: relative;
+  }
+  .pull-palm-seven-twelfths {
+    right: 58.333333333333336%;
+    position: relative;
   }
   .palm-eight-twelfths {
     width: 66.66666666666666%;
   }
+  .push-palm-eight-twelfths {
+    left: 66.66666666666666%;
+    position: relative;
+  }
+  .pull-palm-eight-twelfths {
+    right: 66.66666666666666%;
+    position: relative;
+  }
   .palm-nine-twelfths {
     width: 75%;
+  }
+  .push-palm-nine-twelfths {
+    left: 75%;
+    position: relative;
+  }
+  .pull-palm-nine-twelfths {
+    right: 75%;
+    position: relative;
   }
   .palm-ten-twelfths {
     width: 83.33333333333334%;
   }
+  .push-palm-ten-twelfths {
+    left: 83.33333333333334%;
+    position: relative;
+  }
+  .pull-palm-ten-twelfths {
+    right: 83.33333333333334%;
+    position: relative;
+  }
   .palm-eleven-twelfths {
     width: 91.66666666666666%;
+  }
+  .push-palm-eleven-twelfths {
+    left: 91.66666666666666%;
+    position: relative;
+  }
+  .pull-palm-eleven-twelfths {
+    right: 91.66666666666666%;
+    position: relative;
   }
 }
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -438,128 +1113,464 @@
   .lap-one-half {
     width: 50%;
   }
+  .push-lap-one-half {
+    left: 50%;
+    position: relative;
+  }
+  .pull-lap-one-half {
+    right: 50%;
+    position: relative;
+  }
   .lap-one-third {
     width: 33.33333333333333%;
+  }
+  .push-lap-one-third {
+    left: 33.33333333333333%;
+    position: relative;
+  }
+  .pull-lap-one-third {
+    right: 33.33333333333333%;
+    position: relative;
   }
   .lap-two-thirds {
     width: 66.66666666666666%;
   }
+  .push-lap-two-thirds {
+    left: 66.66666666666666%;
+    position: relative;
+  }
+  .pull-lap-two-thirds {
+    right: 66.66666666666666%;
+    position: relative;
+  }
   .lap-one-quarter {
     width: 25%;
+  }
+  .push-lap-one-quarter {
+    left: 25%;
+    position: relative;
+  }
+  .pull-lap-one-quarter {
+    right: 25%;
+    position: relative;
   }
   .lap-two-quarters {
     width: 50%;
   }
+  .push-lap-two-quarters {
+    left: 50%;
+    position: relative;
+  }
+  .pull-lap-two-quarters {
+    right: 50%;
+    position: relative;
+  }
   .lap-three-quarters {
     width: 75%;
+  }
+  .push-lap-three-quarters {
+    left: 75%;
+    position: relative;
+  }
+  .pull-lap-three-quarters {
+    right: 75%;
+    position: relative;
   }
   .lap-one-fifth {
     width: 20%;
   }
+  .push-lap-one-fifth {
+    left: 20%;
+    position: relative;
+  }
+  .pull-lap-one-fifth {
+    right: 20%;
+    position: relative;
+  }
   .lap-two-fifths {
     width: 40%;
+  }
+  .push-lap-two-fifths {
+    left: 40%;
+    position: relative;
+  }
+  .pull-lap-two-fifths {
+    right: 40%;
+    position: relative;
   }
   .lap-three-fifths {
     width: 60%;
   }
+  .push-lap-three-fifths {
+    left: 60%;
+    position: relative;
+  }
+  .pull-lap-three-fifths {
+    right: 60%;
+    position: relative;
+  }
   .lap-four-fifths {
     width: 80%;
+  }
+  .push-lap-four-fifths {
+    left: 80%;
+    position: relative;
+  }
+  .pull-lap-four-fifths {
+    right: 80%;
+    position: relative;
   }
   .lap-one-sixth {
     width: 16.666666666666664%;
   }
+  .push-lap-one-sixth {
+    left: 16.666666666666664%;
+    position: relative;
+  }
+  .pull-lap-one-sixth {
+    right: 16.666666666666664%;
+    position: relative;
+  }
   .lap-two-sixths {
     width: 33.33333333333333%;
+  }
+  .push-lap-two-sixths {
+    left: 33.33333333333333%;
+    position: relative;
+  }
+  .pull-lap-two-sixths {
+    right: 33.33333333333333%;
+    position: relative;
   }
   .lap-three-sixths {
     width: 50%;
   }
+  .push-lap-three-sixths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-lap-three-sixths {
+    right: 50%;
+    position: relative;
+  }
   .lap-four-sixths {
     width: 66.66666666666666%;
+  }
+  .push-lap-four-sixths {
+    left: 66.66666666666666%;
+    position: relative;
+  }
+  .pull-lap-four-sixths {
+    right: 66.66666666666666%;
+    position: relative;
   }
   .lap-five-sixths {
     width: 83.33333333333334%;
   }
+  .push-lap-five-sixths {
+    left: 83.33333333333334%;
+    position: relative;
+  }
+  .pull-lap-five-sixths {
+    right: 83.33333333333334%;
+    position: relative;
+  }
   .lap-one-eighth {
     width: 12.5%;
+  }
+  .push-lap-one-eighth {
+    left: 12.5%;
+    position: relative;
+  }
+  .pull-lap-one-eighth {
+    right: 12.5%;
+    position: relative;
   }
   .lap-two-eighths {
     width: 25%;
   }
+  .push-lap-two-eighths {
+    left: 25%;
+    position: relative;
+  }
+  .pull-lap-two-eighths {
+    right: 25%;
+    position: relative;
+  }
   .lap-three-eighths {
     width: 37.5%;
+  }
+  .push-lap-three-eighths {
+    left: 37.5%;
+    position: relative;
+  }
+  .pull-lap-three-eighths {
+    right: 37.5%;
+    position: relative;
   }
   .lap-four-eighths {
     width: 50%;
   }
+  .push-lap-four-eighths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-lap-four-eighths {
+    right: 50%;
+    position: relative;
+  }
   .lap-five-eighths {
     width: 62.5%;
+  }
+  .push-lap-five-eighths {
+    left: 62.5%;
+    position: relative;
+  }
+  .pull-lap-five-eighths {
+    right: 62.5%;
+    position: relative;
   }
   .lap-six-eighths {
     width: 75%;
   }
+  .push-lap-six-eighths {
+    left: 75%;
+    position: relative;
+  }
+  .pull-lap-six-eighths {
+    right: 75%;
+    position: relative;
+  }
   .lap-seven-eighths {
     width: 87.5%;
+  }
+  .push-lap-seven-eighths {
+    left: 87.5%;
+    position: relative;
+  }
+  .pull-lap-seven-eighths {
+    right: 87.5%;
+    position: relative;
   }
   .lap-one-tenth {
     width: 10%;
   }
+  .push-lap-one-tenth {
+    left: 10%;
+    position: relative;
+  }
+  .pull-lap-one-tenth {
+    right: 10%;
+    position: relative;
+  }
   .lap-two-tenths {
     width: 20%;
+  }
+  .push-lap-two-tenths {
+    left: 20%;
+    position: relative;
+  }
+  .pull-lap-two-tenths {
+    right: 20%;
+    position: relative;
   }
   .lap-three-tenths {
     width: 30%;
   }
+  .push-lap-three-tenths {
+    left: 30%;
+    position: relative;
+  }
+  .pull-lap-three-tenths {
+    right: 30%;
+    position: relative;
+  }
   .lap-four-tenths {
     width: 40%;
+  }
+  .push-lap-four-tenths {
+    left: 40%;
+    position: relative;
+  }
+  .pull-lap-four-tenths {
+    right: 40%;
+    position: relative;
   }
   .lap-five-tenths {
     width: 50%;
   }
+  .push-lap-five-tenths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-lap-five-tenths {
+    right: 50%;
+    position: relative;
+  }
   .lap-six-tenths {
     width: 60%;
+  }
+  .push-lap-six-tenths {
+    left: 60%;
+    position: relative;
+  }
+  .pull-lap-six-tenths {
+    right: 60%;
+    position: relative;
   }
   .lap-seven-tenths {
     width: 70%;
   }
+  .push-lap-seven-tenths {
+    left: 70%;
+    position: relative;
+  }
+  .pull-lap-seven-tenths {
+    right: 70%;
+    position: relative;
+  }
   .lap-eight-tenths {
     width: 80%;
+  }
+  .push-lap-eight-tenths {
+    left: 80%;
+    position: relative;
+  }
+  .pull-lap-eight-tenths {
+    right: 80%;
+    position: relative;
   }
   .lap-nine-tenths {
     width: 90%;
   }
+  .push-lap-nine-tenths {
+    left: 90%;
+    position: relative;
+  }
+  .pull-lap-nine-tenths {
+    right: 90%;
+    position: relative;
+  }
   .lap-one-twelfth {
     width: 8.333333333333332%;
+  }
+  .push-lap-one-twelfth {
+    left: 8.333333333333332%;
+    position: relative;
+  }
+  .pull-lap-one-twelfth {
+    right: 8.333333333333332%;
+    position: relative;
   }
   .lap-two-twelfths {
     width: 16.666666666666664%;
   }
+  .push-lap-two-twelfths {
+    left: 16.666666666666664%;
+    position: relative;
+  }
+  .pull-lap-two-twelfths {
+    right: 16.666666666666664%;
+    position: relative;
+  }
   .lap-three-twelfths {
     width: 25%;
+  }
+  .push-lap-three-twelfths {
+    left: 25%;
+    position: relative;
+  }
+  .pull-lap-three-twelfths {
+    right: 25%;
+    position: relative;
   }
   .lap-four-twelfths {
     width: 33.33333333333333%;
   }
+  .push-lap-four-twelfths {
+    left: 33.33333333333333%;
+    position: relative;
+  }
+  .pull-lap-four-twelfths {
+    right: 33.33333333333333%;
+    position: relative;
+  }
   .lap-five-twelfths {
     width: 41.66666666666667%;
+  }
+  .push-lap-five-twelfths {
+    left: 41.66666666666667%;
+    position: relative;
+  }
+  .pull-lap-five-twelfths {
+    right: 41.66666666666667%;
+    position: relative;
   }
   .lap-six-twelfths {
     width: 50%;
   }
+  .push-lap-six-twelfths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-lap-six-twelfths {
+    right: 50%;
+    position: relative;
+  }
   .lap-seven-twelfths {
     width: 58.333333333333336%;
+  }
+  .push-lap-seven-twelfths {
+    left: 58.333333333333336%;
+    position: relative;
+  }
+  .pull-lap-seven-twelfths {
+    right: 58.333333333333336%;
+    position: relative;
   }
   .lap-eight-twelfths {
     width: 66.66666666666666%;
   }
+  .push-lap-eight-twelfths {
+    left: 66.66666666666666%;
+    position: relative;
+  }
+  .pull-lap-eight-twelfths {
+    right: 66.66666666666666%;
+    position: relative;
+  }
   .lap-nine-twelfths {
     width: 75%;
+  }
+  .push-lap-nine-twelfths {
+    left: 75%;
+    position: relative;
+  }
+  .pull-lap-nine-twelfths {
+    right: 75%;
+    position: relative;
   }
   .lap-ten-twelfths {
     width: 83.33333333333334%;
   }
+  .push-lap-ten-twelfths {
+    left: 83.33333333333334%;
+    position: relative;
+  }
+  .pull-lap-ten-twelfths {
+    right: 83.33333333333334%;
+    position: relative;
+  }
   .lap-eleven-twelfths {
     width: 91.66666666666666%;
+  }
+  .push-lap-eleven-twelfths {
+    left: 91.66666666666666%;
+    position: relative;
+  }
+  .pull-lap-eleven-twelfths {
+    right: 91.66666666666666%;
+    position: relative;
   }
 }
 @media (max-width: 1023px) {
@@ -569,128 +1580,464 @@
   .portable-one-half {
     width: 50%;
   }
+  .push-portable-one-half {
+    left: 50%;
+    position: relative;
+  }
+  .pull-portable-one-half {
+    right: 50%;
+    position: relative;
+  }
   .portable-one-third {
     width: 33.33333333333333%;
+  }
+  .push-portable-one-third {
+    left: 33.33333333333333%;
+    position: relative;
+  }
+  .pull-portable-one-third {
+    right: 33.33333333333333%;
+    position: relative;
   }
   .portable-two-thirds {
     width: 66.66666666666666%;
   }
+  .push-portable-two-thirds {
+    left: 66.66666666666666%;
+    position: relative;
+  }
+  .pull-portable-two-thirds {
+    right: 66.66666666666666%;
+    position: relative;
+  }
   .portable-one-quarter {
     width: 25%;
+  }
+  .push-portable-one-quarter {
+    left: 25%;
+    position: relative;
+  }
+  .pull-portable-one-quarter {
+    right: 25%;
+    position: relative;
   }
   .portable-two-quarters {
     width: 50%;
   }
+  .push-portable-two-quarters {
+    left: 50%;
+    position: relative;
+  }
+  .pull-portable-two-quarters {
+    right: 50%;
+    position: relative;
+  }
   .portable-three-quarters {
     width: 75%;
+  }
+  .push-portable-three-quarters {
+    left: 75%;
+    position: relative;
+  }
+  .pull-portable-three-quarters {
+    right: 75%;
+    position: relative;
   }
   .portable-one-fifth {
     width: 20%;
   }
+  .push-portable-one-fifth {
+    left: 20%;
+    position: relative;
+  }
+  .pull-portable-one-fifth {
+    right: 20%;
+    position: relative;
+  }
   .portable-two-fifths {
     width: 40%;
+  }
+  .push-portable-two-fifths {
+    left: 40%;
+    position: relative;
+  }
+  .pull-portable-two-fifths {
+    right: 40%;
+    position: relative;
   }
   .portable-three-fifths {
     width: 60%;
   }
+  .push-portable-three-fifths {
+    left: 60%;
+    position: relative;
+  }
+  .pull-portable-three-fifths {
+    right: 60%;
+    position: relative;
+  }
   .portable-four-fifths {
     width: 80%;
+  }
+  .push-portable-four-fifths {
+    left: 80%;
+    position: relative;
+  }
+  .pull-portable-four-fifths {
+    right: 80%;
+    position: relative;
   }
   .portable-one-sixth {
     width: 16.666666666666664%;
   }
+  .push-portable-one-sixth {
+    left: 16.666666666666664%;
+    position: relative;
+  }
+  .pull-portable-one-sixth {
+    right: 16.666666666666664%;
+    position: relative;
+  }
   .portable-two-sixths {
     width: 33.33333333333333%;
+  }
+  .push-portable-two-sixths {
+    left: 33.33333333333333%;
+    position: relative;
+  }
+  .pull-portable-two-sixths {
+    right: 33.33333333333333%;
+    position: relative;
   }
   .portable-three-sixths {
     width: 50%;
   }
+  .push-portable-three-sixths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-portable-three-sixths {
+    right: 50%;
+    position: relative;
+  }
   .portable-four-sixths {
     width: 66.66666666666666%;
+  }
+  .push-portable-four-sixths {
+    left: 66.66666666666666%;
+    position: relative;
+  }
+  .pull-portable-four-sixths {
+    right: 66.66666666666666%;
+    position: relative;
   }
   .portable-five-sixths {
     width: 83.33333333333334%;
   }
+  .push-portable-five-sixths {
+    left: 83.33333333333334%;
+    position: relative;
+  }
+  .pull-portable-five-sixths {
+    right: 83.33333333333334%;
+    position: relative;
+  }
   .portable-one-eighth {
     width: 12.5%;
+  }
+  .push-portable-one-eighth {
+    left: 12.5%;
+    position: relative;
+  }
+  .pull-portable-one-eighth {
+    right: 12.5%;
+    position: relative;
   }
   .portable-two-eighths {
     width: 25%;
   }
+  .push-portable-two-eighths {
+    left: 25%;
+    position: relative;
+  }
+  .pull-portable-two-eighths {
+    right: 25%;
+    position: relative;
+  }
   .portable-three-eighths {
     width: 37.5%;
+  }
+  .push-portable-three-eighths {
+    left: 37.5%;
+    position: relative;
+  }
+  .pull-portable-three-eighths {
+    right: 37.5%;
+    position: relative;
   }
   .portable-four-eighths {
     width: 50%;
   }
+  .push-portable-four-eighths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-portable-four-eighths {
+    right: 50%;
+    position: relative;
+  }
   .portable-five-eighths {
     width: 62.5%;
+  }
+  .push-portable-five-eighths {
+    left: 62.5%;
+    position: relative;
+  }
+  .pull-portable-five-eighths {
+    right: 62.5%;
+    position: relative;
   }
   .portable-six-eighths {
     width: 75%;
   }
+  .push-portable-six-eighths {
+    left: 75%;
+    position: relative;
+  }
+  .pull-portable-six-eighths {
+    right: 75%;
+    position: relative;
+  }
   .portable-seven-eighths {
     width: 87.5%;
+  }
+  .push-portable-seven-eighths {
+    left: 87.5%;
+    position: relative;
+  }
+  .pull-portable-seven-eighths {
+    right: 87.5%;
+    position: relative;
   }
   .portable-one-tenth {
     width: 10%;
   }
+  .push-portable-one-tenth {
+    left: 10%;
+    position: relative;
+  }
+  .pull-portable-one-tenth {
+    right: 10%;
+    position: relative;
+  }
   .portable-two-tenths {
     width: 20%;
+  }
+  .push-portable-two-tenths {
+    left: 20%;
+    position: relative;
+  }
+  .pull-portable-two-tenths {
+    right: 20%;
+    position: relative;
   }
   .portable-three-tenths {
     width: 30%;
   }
+  .push-portable-three-tenths {
+    left: 30%;
+    position: relative;
+  }
+  .pull-portable-three-tenths {
+    right: 30%;
+    position: relative;
+  }
   .portable-four-tenths {
     width: 40%;
+  }
+  .push-portable-four-tenths {
+    left: 40%;
+    position: relative;
+  }
+  .pull-portable-four-tenths {
+    right: 40%;
+    position: relative;
   }
   .portable-five-tenths {
     width: 50%;
   }
+  .push-portable-five-tenths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-portable-five-tenths {
+    right: 50%;
+    position: relative;
+  }
   .portable-six-tenths {
     width: 60%;
+  }
+  .push-portable-six-tenths {
+    left: 60%;
+    position: relative;
+  }
+  .pull-portable-six-tenths {
+    right: 60%;
+    position: relative;
   }
   .portable-seven-tenths {
     width: 70%;
   }
+  .push-portable-seven-tenths {
+    left: 70%;
+    position: relative;
+  }
+  .pull-portable-seven-tenths {
+    right: 70%;
+    position: relative;
+  }
   .portable-eight-tenths {
     width: 80%;
+  }
+  .push-portable-eight-tenths {
+    left: 80%;
+    position: relative;
+  }
+  .pull-portable-eight-tenths {
+    right: 80%;
+    position: relative;
   }
   .portable-nine-tenths {
     width: 90%;
   }
+  .push-portable-nine-tenths {
+    left: 90%;
+    position: relative;
+  }
+  .pull-portable-nine-tenths {
+    right: 90%;
+    position: relative;
+  }
   .portable-one-twelfth {
     width: 8.333333333333332%;
+  }
+  .push-portable-one-twelfth {
+    left: 8.333333333333332%;
+    position: relative;
+  }
+  .pull-portable-one-twelfth {
+    right: 8.333333333333332%;
+    position: relative;
   }
   .portable-two-twelfths {
     width: 16.666666666666664%;
   }
+  .push-portable-two-twelfths {
+    left: 16.666666666666664%;
+    position: relative;
+  }
+  .pull-portable-two-twelfths {
+    right: 16.666666666666664%;
+    position: relative;
+  }
   .portable-three-twelfths {
     width: 25%;
+  }
+  .push-portable-three-twelfths {
+    left: 25%;
+    position: relative;
+  }
+  .pull-portable-three-twelfths {
+    right: 25%;
+    position: relative;
   }
   .portable-four-twelfths {
     width: 33.33333333333333%;
   }
+  .push-portable-four-twelfths {
+    left: 33.33333333333333%;
+    position: relative;
+  }
+  .pull-portable-four-twelfths {
+    right: 33.33333333333333%;
+    position: relative;
+  }
   .portable-five-twelfths {
     width: 41.66666666666667%;
+  }
+  .push-portable-five-twelfths {
+    left: 41.66666666666667%;
+    position: relative;
+  }
+  .pull-portable-five-twelfths {
+    right: 41.66666666666667%;
+    position: relative;
   }
   .portable-six-twelfths {
     width: 50%;
   }
+  .push-portable-six-twelfths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-portable-six-twelfths {
+    right: 50%;
+    position: relative;
+  }
   .portable-seven-twelfths {
     width: 58.333333333333336%;
+  }
+  .push-portable-seven-twelfths {
+    left: 58.333333333333336%;
+    position: relative;
+  }
+  .pull-portable-seven-twelfths {
+    right: 58.333333333333336%;
+    position: relative;
   }
   .portable-eight-twelfths {
     width: 66.66666666666666%;
   }
+  .push-portable-eight-twelfths {
+    left: 66.66666666666666%;
+    position: relative;
+  }
+  .pull-portable-eight-twelfths {
+    right: 66.66666666666666%;
+    position: relative;
+  }
   .portable-nine-twelfths {
     width: 75%;
+  }
+  .push-portable-nine-twelfths {
+    left: 75%;
+    position: relative;
+  }
+  .pull-portable-nine-twelfths {
+    right: 75%;
+    position: relative;
   }
   .portable-ten-twelfths {
     width: 83.33333333333334%;
   }
+  .push-portable-ten-twelfths {
+    left: 83.33333333333334%;
+    position: relative;
+  }
+  .pull-portable-ten-twelfths {
+    right: 83.33333333333334%;
+    position: relative;
+  }
   .portable-eleven-twelfths {
     width: 91.66666666666666%;
+  }
+  .push-portable-eleven-twelfths {
+    left: 91.66666666666666%;
+    position: relative;
+  }
+  .pull-portable-eleven-twelfths {
+    right: 91.66666666666666%;
+    position: relative;
   }
 }
 @media (min-width: 1024px) {
@@ -700,127 +2047,463 @@
   .desk-one-half {
     width: 50%;
   }
+  .push-desk-one-half {
+    left: 50%;
+    position: relative;
+  }
+  .pull-desk-one-half {
+    right: 50%;
+    position: relative;
+  }
   .desk-one-third {
     width: 33.33333333333333%;
+  }
+  .push-desk-one-third {
+    left: 33.33333333333333%;
+    position: relative;
+  }
+  .pull-desk-one-third {
+    right: 33.33333333333333%;
+    position: relative;
   }
   .desk-two-thirds {
     width: 66.66666666666666%;
   }
+  .push-desk-two-thirds {
+    left: 66.66666666666666%;
+    position: relative;
+  }
+  .pull-desk-two-thirds {
+    right: 66.66666666666666%;
+    position: relative;
+  }
   .desk-one-quarter {
     width: 25%;
+  }
+  .push-desk-one-quarter {
+    left: 25%;
+    position: relative;
+  }
+  .pull-desk-one-quarter {
+    right: 25%;
+    position: relative;
   }
   .desk-two-quarters {
     width: 50%;
   }
+  .push-desk-two-quarters {
+    left: 50%;
+    position: relative;
+  }
+  .pull-desk-two-quarters {
+    right: 50%;
+    position: relative;
+  }
   .desk-three-quarters {
     width: 75%;
+  }
+  .push-desk-three-quarters {
+    left: 75%;
+    position: relative;
+  }
+  .pull-desk-three-quarters {
+    right: 75%;
+    position: relative;
   }
   .desk-one-fifth {
     width: 20%;
   }
+  .push-desk-one-fifth {
+    left: 20%;
+    position: relative;
+  }
+  .pull-desk-one-fifth {
+    right: 20%;
+    position: relative;
+  }
   .desk-two-fifths {
     width: 40%;
+  }
+  .push-desk-two-fifths {
+    left: 40%;
+    position: relative;
+  }
+  .pull-desk-two-fifths {
+    right: 40%;
+    position: relative;
   }
   .desk-three-fifths {
     width: 60%;
   }
+  .push-desk-three-fifths {
+    left: 60%;
+    position: relative;
+  }
+  .pull-desk-three-fifths {
+    right: 60%;
+    position: relative;
+  }
   .desk-four-fifths {
     width: 80%;
+  }
+  .push-desk-four-fifths {
+    left: 80%;
+    position: relative;
+  }
+  .pull-desk-four-fifths {
+    right: 80%;
+    position: relative;
   }
   .desk-one-sixth {
     width: 16.666666666666664%;
   }
+  .push-desk-one-sixth {
+    left: 16.666666666666664%;
+    position: relative;
+  }
+  .pull-desk-one-sixth {
+    right: 16.666666666666664%;
+    position: relative;
+  }
   .desk-two-sixths {
     width: 33.33333333333333%;
+  }
+  .push-desk-two-sixths {
+    left: 33.33333333333333%;
+    position: relative;
+  }
+  .pull-desk-two-sixths {
+    right: 33.33333333333333%;
+    position: relative;
   }
   .desk-three-sixths {
     width: 50%;
   }
+  .push-desk-three-sixths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-desk-three-sixths {
+    right: 50%;
+    position: relative;
+  }
   .desk-four-sixths {
     width: 66.66666666666666%;
+  }
+  .push-desk-four-sixths {
+    left: 66.66666666666666%;
+    position: relative;
+  }
+  .pull-desk-four-sixths {
+    right: 66.66666666666666%;
+    position: relative;
   }
   .desk-five-sixths {
     width: 83.33333333333334%;
   }
+  .push-desk-five-sixths {
+    left: 83.33333333333334%;
+    position: relative;
+  }
+  .pull-desk-five-sixths {
+    right: 83.33333333333334%;
+    position: relative;
+  }
   .desk-one-eighth {
     width: 12.5%;
+  }
+  .push-desk-one-eighth {
+    left: 12.5%;
+    position: relative;
+  }
+  .pull-desk-one-eighth {
+    right: 12.5%;
+    position: relative;
   }
   .desk-two-eighths {
     width: 25%;
   }
+  .push-desk-two-eighths {
+    left: 25%;
+    position: relative;
+  }
+  .pull-desk-two-eighths {
+    right: 25%;
+    position: relative;
+  }
   .desk-three-eighths {
     width: 37.5%;
+  }
+  .push-desk-three-eighths {
+    left: 37.5%;
+    position: relative;
+  }
+  .pull-desk-three-eighths {
+    right: 37.5%;
+    position: relative;
   }
   .desk-four-eighths {
     width: 50%;
   }
+  .push-desk-four-eighths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-desk-four-eighths {
+    right: 50%;
+    position: relative;
+  }
   .desk-five-eighths {
     width: 62.5%;
+  }
+  .push-desk-five-eighths {
+    left: 62.5%;
+    position: relative;
+  }
+  .pull-desk-five-eighths {
+    right: 62.5%;
+    position: relative;
   }
   .desk-six-eighths {
     width: 75%;
   }
+  .push-desk-six-eighths {
+    left: 75%;
+    position: relative;
+  }
+  .pull-desk-six-eighths {
+    right: 75%;
+    position: relative;
+  }
   .desk-seven-eighths {
     width: 87.5%;
+  }
+  .push-desk-seven-eighths {
+    left: 87.5%;
+    position: relative;
+  }
+  .pull-desk-seven-eighths {
+    right: 87.5%;
+    position: relative;
   }
   .desk-one-tenth {
     width: 10%;
   }
+  .push-desk-one-tenth {
+    left: 10%;
+    position: relative;
+  }
+  .pull-desk-one-tenth {
+    right: 10%;
+    position: relative;
+  }
   .desk-two-tenths {
     width: 20%;
+  }
+  .push-desk-two-tenths {
+    left: 20%;
+    position: relative;
+  }
+  .pull-desk-two-tenths {
+    right: 20%;
+    position: relative;
   }
   .desk-three-tenths {
     width: 30%;
   }
+  .push-desk-three-tenths {
+    left: 30%;
+    position: relative;
+  }
+  .pull-desk-three-tenths {
+    right: 30%;
+    position: relative;
+  }
   .desk-four-tenths {
     width: 40%;
+  }
+  .push-desk-four-tenths {
+    left: 40%;
+    position: relative;
+  }
+  .pull-desk-four-tenths {
+    right: 40%;
+    position: relative;
   }
   .desk-five-tenths {
     width: 50%;
   }
+  .push-desk-five-tenths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-desk-five-tenths {
+    right: 50%;
+    position: relative;
+  }
   .desk-six-tenths {
     width: 60%;
+  }
+  .push-desk-six-tenths {
+    left: 60%;
+    position: relative;
+  }
+  .pull-desk-six-tenths {
+    right: 60%;
+    position: relative;
   }
   .desk-seven-tenths {
     width: 70%;
   }
+  .push-desk-seven-tenths {
+    left: 70%;
+    position: relative;
+  }
+  .pull-desk-seven-tenths {
+    right: 70%;
+    position: relative;
+  }
   .desk-eight-tenths {
     width: 80%;
+  }
+  .push-desk-eight-tenths {
+    left: 80%;
+    position: relative;
+  }
+  .pull-desk-eight-tenths {
+    right: 80%;
+    position: relative;
   }
   .desk-nine-tenths {
     width: 90%;
   }
+  .push-desk-nine-tenths {
+    left: 90%;
+    position: relative;
+  }
+  .pull-desk-nine-tenths {
+    right: 90%;
+    position: relative;
+  }
   .desk-one-twelfth {
     width: 8.333333333333332%;
+  }
+  .push-desk-one-twelfth {
+    left: 8.333333333333332%;
+    position: relative;
+  }
+  .pull-desk-one-twelfth {
+    right: 8.333333333333332%;
+    position: relative;
   }
   .desk-two-twelfths {
     width: 16.666666666666664%;
   }
+  .push-desk-two-twelfths {
+    left: 16.666666666666664%;
+    position: relative;
+  }
+  .pull-desk-two-twelfths {
+    right: 16.666666666666664%;
+    position: relative;
+  }
   .desk-three-twelfths {
     width: 25%;
+  }
+  .push-desk-three-twelfths {
+    left: 25%;
+    position: relative;
+  }
+  .pull-desk-three-twelfths {
+    right: 25%;
+    position: relative;
   }
   .desk-four-twelfths {
     width: 33.33333333333333%;
   }
+  .push-desk-four-twelfths {
+    left: 33.33333333333333%;
+    position: relative;
+  }
+  .pull-desk-four-twelfths {
+    right: 33.33333333333333%;
+    position: relative;
+  }
   .desk-five-twelfths {
     width: 41.66666666666667%;
+  }
+  .push-desk-five-twelfths {
+    left: 41.66666666666667%;
+    position: relative;
+  }
+  .pull-desk-five-twelfths {
+    right: 41.66666666666667%;
+    position: relative;
   }
   .desk-six-twelfths {
     width: 50%;
   }
+  .push-desk-six-twelfths {
+    left: 50%;
+    position: relative;
+  }
+  .pull-desk-six-twelfths {
+    right: 50%;
+    position: relative;
+  }
   .desk-seven-twelfths {
     width: 58.333333333333336%;
+  }
+  .push-desk-seven-twelfths {
+    left: 58.333333333333336%;
+    position: relative;
+  }
+  .pull-desk-seven-twelfths {
+    right: 58.333333333333336%;
+    position: relative;
   }
   .desk-eight-twelfths {
     width: 66.66666666666666%;
   }
+  .push-desk-eight-twelfths {
+    left: 66.66666666666666%;
+    position: relative;
+  }
+  .pull-desk-eight-twelfths {
+    right: 66.66666666666666%;
+    position: relative;
+  }
   .desk-nine-twelfths {
     width: 75%;
+  }
+  .push-desk-nine-twelfths {
+    left: 75%;
+    position: relative;
+  }
+  .pull-desk-nine-twelfths {
+    right: 75%;
+    position: relative;
   }
   .desk-ten-twelfths {
     width: 83.33333333333334%;
   }
+  .push-desk-ten-twelfths {
+    left: 83.33333333333334%;
+    position: relative;
+  }
+  .pull-desk-ten-twelfths {
+    right: 83.33333333333334%;
+    position: relative;
+  }
   .desk-eleven-twelfths {
     width: 91.66666666666666%;
+  }
+  .push-desk-eleven-twelfths {
+    left: 91.66666666666666%;
+    position: relative;
+  }
+  .pull-desk-eleven-twelfths {
+    right: 91.66666666666666%;
+    position: relative;
   }
 }

@@ -39,7 +39,7 @@ breakpoints =  			"palm" "(max-width: 480px)",
 
 
 /*------------------------------------*\
-	$MIXINS
+  $MIXINS
 \*------------------------------------*/
 /**
  * Mixin to create the different sizes dynamically
@@ -48,7 +48,7 @@ create-size(namespace, width, sizes = null)
   if sizes
     for size, i in sizes
       plural = i is 0 ? "" : "s"
-        .{namespace}{size}-{width}{(plural)}
+      .{namespace}{size}-{width}{(plural)}
         width: ((i + 1) / (length(sizes) + 1)) * 100%
       if push
         .push-{namespace}{size}-{width}{(plural)}
@@ -58,9 +58,9 @@ create-size(namespace, width, sizes = null)
         .pull-{namespace}{size}-{width}{(plural)}
           right: ((i + 1) / (length(sizes) + 1)) * 100%
           position: relative
-	else
-		.{namespace}one-whole
-			width: 100%
+  else
+    .{namespace}one-whole
+      width: 100%
 
 /**
  * These mixins are for the library to use only, you should not need to modify
